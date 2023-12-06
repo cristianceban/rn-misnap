@@ -1136,16 +1136,16 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [wself.overlayView initializeObjects]; // Reset state on start or retry
-        [wself.overlayView setupViewWithParams:wself.captureParams orientation:self.statusbarOrientation];
+        [wself.overlayView setupViewWithParams:wself.captureParams orientation:wself.statusbarOrientation];
         
-        wself.captureView.analyzeFrameDelay = self.analyzeFrameDelay;
+        wself.captureView.analyzeFrameDelay = wself.analyzeFrameDelay;
         [wself.captureView start];
         wself.overlayView.alpha = 0.0;
         wself.overlayView.hidden = FALSE;
         [wself.overlayView manageTorchButton:wself.cameraView.hasTorch];
         
-        wself.overlayView.showGlareTracking = self.showGlareTracking;
-        wself.captureView.showGlareTracking = self.showGlareTracking;
+        wself.overlayView.showGlareTracking = wself.showGlareTracking;
+        wself.captureView.showGlareTracking = wself.showGlareTracking;
         
         wself.captureView.alpha = 0.0;
         wself.captureView.hidden = FALSE;
@@ -1241,7 +1241,7 @@
             [wself.captureParams setValue:@"1" forKey:kMiSnapCaptureMode];
         }
 
-        [wself.captureView initializeObjectsWithCaptureParameters:self.captureParams orientation:self.statusbarOrientation];
+        [wself.captureView initializeObjectsWithCaptureParameters:wself.captureParams orientation:wself.statusbarOrientation];
 
         wself.shouldSkipFrames = FALSE;
         [wself runStateMachineAt:FAILOVER_CAPTURE_STATE];

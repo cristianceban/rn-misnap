@@ -10,6 +10,7 @@
 #import <MiSnapSDKScience/MiSnapSDKScienceParameters.h>
 #import <MiSnapSDKScience/MiSnapSDKScienceResults.h>
 #import <MiSnapSDKScience/MiSnapSDKAnalyzeResults.h>
+#import <MiSnapSDKScience/MiSnapSDKScienceMicrResult.h>
 
 /*!
  @class MiSnapSDKScience

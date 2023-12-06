@@ -243,7 +243,7 @@
 
 #pragma mark - External methods
 
-- (void)setupViewWithParams:(NSDictionary *)params orientation:(UIInterfaceOrientation)orientation;
+- (void)setupViewWithParams:(NSDictionary *)params orientation:(UIInterfaceOrientation)orientation
 {
     [super setupViewWithParams:params orientation:orientation];
     

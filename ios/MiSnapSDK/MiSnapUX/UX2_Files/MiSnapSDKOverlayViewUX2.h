@@ -28,7 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *guideDotImageView;
 
 - (void)initializeObjects;
-- (void)setupViewWithParams:(NSDictionary *)params;
+- (void)setupViewWithParams:(NSDictionary *)params orientation:(UIInterfaceOrientation)orientation;
 - (void)setGhostImage:(NSString*)documentType withOrientation:(UIInterfaceOrientation)orientation;
 - (void)setTorchButtonStatus:(BOOL)onFlag;
 - (void)manageTorchButton:(BOOL)hasTorch;

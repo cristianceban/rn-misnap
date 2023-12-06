@@ -26,7 +26,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *smartBubbleLabel;
 
 - (void)initializeObjects;
-- (void)setupViewWithParams:(NSDictionary *)params;
+- (void)setupViewWithParams:(NSDictionary *)params orientation:(UIInterfaceOrientation)orientation;
 - (void)setTorchButtonStatus:(BOOL)onFlag;
 - (void)openGaugeImageView;
 - (void)closeGaugeImageView;

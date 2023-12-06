@@ -188,7 +188,7 @@
 
 #pragma mark - External methods
 
-- (void)setupViewWithParams:(NSDictionary *)params orientation:(UIInterfaceOrientation)orientation;
+- (void)setupViewWithParams:(NSDictionary *)params orientation:(UIInterfaceOrientation)orientation
 {
     self.docCaptureParams = [MiSnapSDKParameters new];
     [self.docCaptureParams updateParameters:params];

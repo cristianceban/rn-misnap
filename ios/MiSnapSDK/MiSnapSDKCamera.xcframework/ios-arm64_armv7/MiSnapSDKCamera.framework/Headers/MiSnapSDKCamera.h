@@ -172,23 +172,17 @@
     Default: 10
  */
 @property (nonatomic) NSInteger videoQuality;
-
-/*! @abstract A camera focus mode
-    Applied only to iPhone 14 Pro and Pro Max models
-    Default: AVCaptureFocusModeContinuousAutoFocus
-    Note, it's not recommended to change this value without consulting with Mitek representative
+/**
+ @abstract A locked focus dictionary
+ where,
+ key is a device model (e.g. iPhone15,3)
+ value is a locked focus float value in a range 0.0...1.0
+ 
+ Default: nil
+ 
+ Note, it's not recommended to set this property without consulting with Mitek representative
  */
-@property (nonatomic) AVCaptureFocusMode focusMode;
-
-/*! @abstract A camera focus position that is applied when `focusMode` is overridden to `AVCaptureFocusModeLocked`
-    Applied only to iPhone 14 Pro and Pro Max models
-    Range: [0, 100]
-    0 - focus is very close to a camera
-    100 - focus is farther away from a camera
-    Default: 65
-    Note, it's not recommended to change this value without consulting with Mitek representative
- */
-@property (nonatomic) NSInteger focusPosition;
+@property (nonatomic) NSDictionary * _Nullable lockedFocusDictionary;
 
 /*!
  @abstract Creates an instance of MiSnapSDKCamera
